@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'Oswald','Roboto', sans-serif;
+    
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 70px;
+    margin: 30px 0;
+}
+.menu-icon{
+    width: 50px;
+    display: none;
+    
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    text-align: right;
+
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.row .col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 80px;
+    padding: 50px 0;
+    
+}
+.col-1 >*{
+    margin: 10px 0px;
+}
+.col-1 h2{
+    font-size: 30px;
+    line-height: 150%;
+    font-family: 'Roboto',sans-serif;
+}
+.col-1 h5{
+    font-size: 20px;
+    color: rgb(34, 34, 34);
+}
+.col-1 button{
+    width: 40%;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    background: linear-gradient(to right , #3574bd, #5fa1ed);
+    border-radius: .3rem;
+    letter-spacing: .1rem;
+    color: #fff;
+}
+.row .col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.phone{
+    max-width: 100%;
+    width:400px;
+    padding: 30px;
+}
+.col-2 .color-box{
+    position: absolute;
+    background: linear-gradient(to right , #3574bd, #5fa1ed);
+    top: 0;
+    right: 0;
+    border-radius: 20px 0 0 20px;
+    width: 90%;
+    height: 100%;
+    z-index: -1;
+    transform: translate(150px );
+    
+}
+
+
+
+/* responsive */
+
+
+@media only screen and (max-width:700px){
+    .menu-icon {
+        display: block;
+    }
+    nav ul{
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+        top: 75px;
+        right: 0;
+    }
+    nav ul li{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background: linear-gradient(to right , #3574bd, #5fa1ed);
+       
+        
+    }
+    nav ul li a{
+        color:#fff;
+        padding: 10px;
+    }
+
+}
+
